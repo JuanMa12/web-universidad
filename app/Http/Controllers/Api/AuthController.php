@@ -1,12 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\Api\Client;
+namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\Calendar;
 use App\Models\Field;
 use App\Models\User;
 use App\Transformers\UserTransformer;
+use App\Http\Requests\LoginUserRequest;
 use Illuminate\Http\Request;
 use Tymon\JWTAuth\Facades\JWTAuth;
 

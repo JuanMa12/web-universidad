@@ -20,7 +20,7 @@ Route::group(['prefix' => 'api/','namespace'=>'Api'], function() {
     //routes user
     Route::resource('user/', 'UserController');
 
-    Route::post('auth/','AuthController@login');
+    Route::post('login/','AuthController@login');
 
     //routes participant
     Route::resource('participant/', 'ParticipantController');
