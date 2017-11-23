@@ -1,0 +1,106 @@
+.panel-heading {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.filter {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.filter-column {
+  -webkit-box-flex: 4;
+  flex: 4;
+  padding-right: 15px;
+}
+
+.filter-operator {
+  -webkit-box-flex: 4;
+  flex: 4;
+  padding-right: 15px;
+}
+
+.filter-input {
+  -webkit-box-flex: 6;
+  flex: 6;
+  padding-right: 15px;
+}
+
+.filter-btn {
+  -webkit-box-flex: 1;
+  flex: 1;
+}
+
+.pagination-footer {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.pagination-input {
+  width: 45px;
+}
+
+.img-user {
+  max-width: 60px;
+  max-height: 60px;
+}
+
+.img-edit {
+  max-width: 100px;
+  max-height: 150px;
+}
+
+.mt {
+  margin-top: 10px !important;
+}
+
+.img-field {
+  padding: 5px !important;
+  max-height: 100px;
+}
+
+.img-field-small {
+  min-width: 60px;
+  min-height: 60px;
+  max-width: 60px;
+  max-height: 60px;
+}
+
+.pe-blue {
+  color: #2360A5;
+  font-size: 18px;
+}
+
+.hr-blue {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  border-top: 1px solid  #2360A5;
+}
+
+.category-blue {
+  color: #2360A5 !important;
+}
+
+.spanLink {
+  color: #2360A5 !important;
+}
+
+.spanLink:hover {
+  color: #2d8ff6 !important;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=app.css.map */
