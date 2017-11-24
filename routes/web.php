@@ -24,4 +24,7 @@ Route::group(['prefix' => 'api/','namespace'=>'Api'], function() {
 
     //routes participant
     Route::resource('participant/', 'ParticipantController');
+
+    //routes report
+    Route::resource('report/', 'ReportController');
 });
