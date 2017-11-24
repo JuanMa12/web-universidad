@@ -16,4 +16,17 @@ class ParticipantController extends Controller
               'list' => Participant::all()
           ]);
   }
+
+  public function store(Request $request)
+  {
+      Participant::create([
+          'uuid' => Uuid::generate(4),
+          'name'   => $request->name,
+          'gender'   => $request->gender,
+          'years'   => $request->years,
+          'document'   => $request->document
+      ]);
+
+      return response()->json(['saved' => true]);
+  }
 }

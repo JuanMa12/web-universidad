@@ -13,7 +13,7 @@ class Participant extends Model
      * @var array
      */
     protected $fillable = [
-        'uuid', 'name', 'genred', 'years' , 'document', 'password' , 'active'
+        'uuid', 'name', 'gender', 'years' , 'document' , 'active'
     ];
 
     /**
@@ -26,7 +26,7 @@ class Participant extends Model
     ];
 
     //relations
-    
+
     public function calendars()
     {
         return $this->hasMany('App\Calendar');
