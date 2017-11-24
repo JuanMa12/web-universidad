@@ -51,7 +51,10 @@ class AuthController extends Controller
                 ['incorrect' => 'Verify email and password'],481
             );
         }else{
-            return response()->json(['token'=> $token]);
+            return response()->json([
+              'token'=> $token,
+              'rol'=> $user->rol
+            ]);
         }
     }
 
