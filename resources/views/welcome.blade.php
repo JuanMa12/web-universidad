@@ -7,9 +7,6 @@
     <meta name="csrf-token" content="{!! csrf_token() !!}">
     <link rel="icon" type="image/png" href="{{asset('img/logo.png')}}" />
     <title>Web-Universidad</title>
-    <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/toastr.min.css')}}">
 </head>
 <body>
   <div class="text-center">
@@ -18,8 +15,4 @@
   </div>
 
 </body>
-<script type="text/javascript" src="{{asset('js/app.js')}}"></script>
-<script type="text/javascript" src="{{asset('js/jquery.js')}}"></script>
-<script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('js/toastr.min.js')}}"></script>
 </html>
