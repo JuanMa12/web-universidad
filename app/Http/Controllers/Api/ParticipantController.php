@@ -29,4 +29,12 @@ class ParticipantController extends Controller
 
       return response()->json(['saved' => true]);
   }
+
+  public function remove(Request $request,$uuid)
+  {
+      $participant = Participant::where('uuid',$uuid)->first();
+      $participant->delete();
+
+      return response()->json(['remove' => true]);
+  }
 }

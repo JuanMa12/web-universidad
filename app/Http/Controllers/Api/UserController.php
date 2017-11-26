@@ -25,6 +25,7 @@ class UserController extends Controller
             'uuid' => Uuid::generate(4),
             'name'   => $request->name,
             'email'   => $request->email,
+            'active'   => 1,
             'password'   => bcrypt($request->password)
         ]);
 

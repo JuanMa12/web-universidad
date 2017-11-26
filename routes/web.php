@@ -24,6 +24,7 @@ Route::group(['prefix' => 'api/','namespace'=>'Api'], function() {
 
     //routes participant
     Route::resource('participant/', 'ParticipantController');
+    Route::get('participant/{uuid}', 'ParticipantController@remove');
 
     //routes report
     Route::resource('report/', 'ReportController');
