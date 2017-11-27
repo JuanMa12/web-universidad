@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Webpatser\Uuid\Uuid;
 use Illuminate\Database\Eloquent\Model;
+use Carbon;
 
 class Participant extends Model
 {
@@ -13,7 +14,9 @@ class Participant extends Model
      * @var array
      */
     protected $fillable = [
-        'uuid', 'name', 'gender', 'years' , 'document' , 'active'
+        'uuid', 'name_one', 'name_two','lastname_one','lastname_two',
+        'type','born','gender', 'deparment' , 'city' , 'type_document',
+        'active', 'document', 'school'
     ];
 
     /**
@@ -22,30 +25,22 @@ class Participant extends Model
      * @var array
      */
     protected $hidden = [
-      'document'
+
     ];
+
+    protected $appends = ['years'];
 
     //relations
 
-    public function calendars()
+    public function getYearsAttribute()
     {
-        return $this->hasMany('App\Calendar');
-    }
 
-    public function favorites()
-    {
-        return $this->hasMany('App\FavoritesField');
-    }
+        $born = $this->attributes['born'];
+        $hoy = Carbon\Carbon::now();
 
-    //methods
+        $date_new = $hoy->format('Y-m-d');
+        $year = $date_new-$born;
+        return $year;
 
-    public static function byUuid($id)
-    {
-        return static::where('uuid', $id)->first();
-    }
-
-    public function avatar()
-    {
-        return 'http://www.gravatar.com/avatar/'.md5($this->email).'?s=356d-nm';
     }
 }

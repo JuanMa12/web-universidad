@@ -21,9 +21,17 @@ class ParticipantController extends Controller
   {
       Participant::create([
           'uuid' => Uuid::generate(4),
-          'name'   => $request->name,
+          'name_one'   => $request->name_one,
+          'name_two'   => $request->name_two,
+          'lastname_one'   => $request->lastname_one,
+          'lastname_two'   => $request->lastname_two,
+          'type'   => $request->type,
+          'born'   => $request->born,
           'gender'   => $request->gender,
-          'years'   => $request->years,
+          'deparment'   => $request->deparment,
+          'city'   => $request->deparment,
+          'type_document'   => $request->type_document,
+          'school'   => $request->school,
           'document'   => $request->document
       ]);
 
