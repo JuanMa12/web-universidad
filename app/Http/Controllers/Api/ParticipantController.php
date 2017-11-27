@@ -29,7 +29,7 @@ class ParticipantController extends Controller
           'born'   => $request->born,
           'gender'   => $request->gender,
           'deparment'   => $request->deparment,
-          'city'   => $request->deparment,
+          'city'   => $request->city,
           'type_document'   => $request->type_document,
           'school'   => $request->school,
           'document'   => $request->document
